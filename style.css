@@ -1,0 +1,67 @@
+body {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+.section {
+  padding: 50px 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#search_box {
+  padding: 8px 10px;
+  margin: 0;
+  font-size: 20px;
+  border: none;
+  background-color: #ddd;
+  border-radius: 5px;
+}
+#search_btn {
+  padding: 8px 10px;
+  margin: 0;
+  font-size: 20px;
+  border: none;
+  background: tomato;
+  border-radius: 5px;
+}
+#search_btn:hover {
+  cursor: pointer;
+}
+
+.results {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+.mealCard {
+  padding: 50px;
+  margin: 25px;
+  border: 1px solid black;
+}
+.mealImg {
+  width: 100%;
+}
+.mealName {
+  display: block;
+  padding: 25px 0 0 0;
+  text-decoration: none;
+  font-size: 36px;
+  color: black;
+  font-weight: 600;
+}
+.mealName:hover {
+  cursor: pointer;
+}
+
+#popup {
+  height: 100vh;
+  width: 100vw;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  display: none;
+}
