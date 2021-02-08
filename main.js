@@ -66,6 +66,7 @@ async function title_action(e, mealId){
     const api_url = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealId}`
     await get_meals(api_url, 2)
     popup.style.display = 'flex'
+    resSec.style.display = 'none'
     popup.children[0].setAttribute('src', single_meal.strMealThumb)
     mealTitle.innerText = single_meal.strMeal
     mealDisc.innerText = single_meal.strInstructions
@@ -77,6 +78,7 @@ async function title_action(e, mealId){
 
 function closePopup(e){
     popup.style.display = 'none'
+    resSec.style.display = 'grid'
     document.body.style.overflow = "auto"
 }
 
